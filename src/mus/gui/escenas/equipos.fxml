@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="510.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mus.gui.controllers.ControladorEquipos">
+   <children>
+      <ImageView fitHeight="536.0" fitWidth="510.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/fondo2.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="pane_eq1" prefHeight="430.0" prefWidth="255.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="53.0" text="EQUIPO 1" textFill="#f5f0f0" AnchorPane.leftAnchor="101.0" AnchorPane.rightAnchor="101.0" AnchorPane.topAnchor="35.0" />
+            <AnchorPane fx:id="pane_eq1_j1" prefHeight="190.0" prefWidth="255.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <ComboBox fx:id="cb_eq1_j1" prefHeight="25.0" prefWidth="113.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="30.0" />
+                  <Label layoutX="20.0" layoutY="25.0" prefHeight="35.0" prefWidth="75.0" text="JUGADOR 1:" textFill="#fcf9f9" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="25.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pane_eq1_j2" layoutX="10.0" layoutY="10.0" prefHeight="190.0" prefWidth="255.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="240.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="25.0" prefHeight="35.0" prefWidth="75.0" text="JUGADOR 2:" textFill="#fcf9f9" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="25.0" />
+                  <ComboBox fx:id="cb_eq1_j2" layoutX="37.0" prefHeight="25.0" prefWidth="113.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="30.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane_eq2" layoutX="10.0" layoutY="10.0" prefHeight="430.0" prefWidth="255.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="53.0" text="EQUIPO 2" textFill="#f5f0f0" AnchorPane.leftAnchor="101.0" AnchorPane.rightAnchor="101.0" AnchorPane.topAnchor="35.0" />
+            <AnchorPane fx:id="pane_eq2_j1" prefHeight="190.0" prefWidth="255.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="25.0" prefHeight="35.0" prefWidth="75.0" text="JUGADOR 1:" textFill="#fcf9f9" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="25.0" />
+                  <ComboBox fx:id="cb_eq2_j1" prefHeight="25.0" prefWidth="113.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="30.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pane_eq2_j2" layoutX="10.0" layoutY="10.0" prefHeight="190.0" prefWidth="255.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="240.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="25.0" prefHeight="35.0" prefWidth="75.0" text="JUGADOR 2:" textFill="#fcf9f9" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="25.0" />
+                  <ComboBox fx:id="cb_eq2_j2" prefHeight="25.0" prefWidth="113.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="30.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnAtras" layoutX="14.0" layoutY="458.0" mnemonicParsing="false" onAction="#atrasButtonClicked" prefHeight="25.0" prefWidth="59.0" text="Atrás" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnListoEquipos" layoutX="199.0" layoutY="433.0" mnemonicParsing="false" onAction="#listoButtonClicked" prefHeight="50.0" prefWidth="113.0" text="¡LISTO!" AnchorPane.bottomAnchor="25.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane_mesa" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="img_mesa" fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/mesa.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="pane_jugadores" prefHeight="335.0" prefWidth="450.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="pane_jugador0" layoutX="102.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="275.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="123.0">
+               <children>
+                  <ImageView fx:id="mano_j0" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0">
+                     <image>
+                        <Image url="@../resources/mano.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane fx:id="pane_j0_action" prefHeight="21.0" prefWidth="55.0" visible="false" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="bocadillo_j0" fitHeight="25.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.9942607879638672" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../resources/bocadillo.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="action_j0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="56.0" AnchorPane.bottomAnchor="8.21875" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="Arial Black" size="8.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="name_j0" fill="WHITE" layoutX="28.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="j11" textAlignment="CENTER" wrappingWidth="47.81669235229492" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="28.0">
+                     <font>
+                        <Font name="Arial Black" size="6.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane fx:id="pane_cartas0" layoutX="1.0" layoutY="34.0" prefHeight="76.0" prefWidth="204.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="carta_00" fitHeight="69.0" fitWidth="52.0" layoutX="3.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="3.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="carta_01" fitHeight="69.0" fitWidth="52.0" layoutX="52.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="7.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="carta_02" fitHeight="69.0" fitWidth="52.0" layoutX="101.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="7.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="carta_03" fitHeight="69.0" fitWidth="52.0" layoutX="150.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="6.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="pane_j0_condicional" layoutX="85.0" layoutY="-1.0" prefHeight="22.0" prefWidth="121.0" visible="false" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="-1.0">
+                     <children>
+                        <ImageView fx:id="bocadillo_j0_condicional" fitHeight="22.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../resources/bocadillo2.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="info_j0_condicional" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="121.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="Arial Black" size="8.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fx:id="img_j0" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="38.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pane_jugador1" layoutX="318.0" layoutY="205.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="275.0" rotate="270.0" AnchorPane.bottomAnchor="205.0" AnchorPane.rightAnchor="-83.0" AnchorPane.topAnchor="205.0">
+               <children>
+                  <AnchorPane fx:id="pane_j1_action" prefHeight="21.0" prefWidth="55.0" visible="false" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="bocadillo_j1" fitHeight="25.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.9942607879638672" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../resources/bocadillo.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="action_j1" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="56.0" AnchorPane.bottomAnchor="8.21875" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="Arial Black" size="8.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="name_j1" fill="WHITE" layoutX="31.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="j21" textAlignment="CENTER" wrappingWidth="47.81669235229492" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font name="Arial Black" size="6.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane fx:id="pane_cartas1" layoutX="1.0" layoutY="34.0" prefHeight="76.0" prefWidth="204.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="carta_10" fitHeight="69.0" fitWidth="52.0" layoutX="3.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="3.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="carta_11" fitHeight="69.0" fitWidth="52.0" layoutX="52.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="7.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="carta_12" fitHeight="69.0" fitWidth="52.0" layoutX="101.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="7.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="carta_13" fitHeight="69.0" fitWidth="52.0" layoutX="150.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="6.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="pane_j1_condicional" prefHeight="22.0" prefWidth="121.0" visible="false" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="bocadillo_j1_condicional" fitHeight="22.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../resources/bocadillo2.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="info_j1_condicional" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="121.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="Arial Black" size="8.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fx:id="mano_j1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0">
+                     <image>
+                        <Image url="@../resources/mano.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_j1" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="38.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pane_jugador2" layoutX="113.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="275.0" rotate="180.0" AnchorPane.leftAnchor="113.0" AnchorPane.topAnchor="9.0">
+               <children>
+                  <AnchorPane fx:id="pane_j2_action" prefHeight="21.0" prefWidth="55.0" visible="false" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="bocadillo_j2" fitHeight="25.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.9942607879638672" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../resources/bocadillo.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="action_j2" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="56.0" AnchorPane.bottomAnchor="8.21875" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="Arial Black" size="8.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="name_j2" fill="WHITE" layoutX="28.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="j12" textAlignment="CENTER" wrappingWidth="47.81669235229492" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="28.0">
+                     <font>
+                        <Font name="Arial Black" size="6.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane fx:id="pane_cartas2" layoutX="1.0" layoutY="34.0" prefHeight="76.0" prefWidth="204.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="carta_20" fitHeight="69.0" fitWidth="52.0" layoutX="3.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="3.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="carta_21" fitHeight="69.0" fitWidth="52.0" layoutX="52.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="7.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="carta_22" fitHeight="69.0" fitWidth="52.0" layoutX="101.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="7.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="carta_23" fitHeight="69.0" fitWidth="52.0" layoutX="150.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="6.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="pane_j2_condicional" layoutX="85.0" layoutY="-1.0" prefHeight="22.0" prefWidth="121.0" visible="false" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="-1.0">
+                     <children>
+                        <ImageView fx:id="bocadillo_j2_condicional" fitHeight="22.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../resources/bocadillo2.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="info_j2_condicional" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="121.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="Arial Black" size="8.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fx:id="mano_j2" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0">
+                     <image>
+                        <Image url="@../resources/mano.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_j2" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="38.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pane_jugador3" layoutX="-97.0" layoutY="205.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="285.0" rotate="90.0" AnchorPane.bottomAnchor="205.0" AnchorPane.leftAnchor="-88.0" AnchorPane.topAnchor="205.0">
+               <children>
+                  <AnchorPane fx:id="pane_j3_action" prefHeight="21.0" prefWidth="55.0" visible="false" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="bocadillo_j3" fitHeight="25.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.9942607879638672" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../resources/bocadillo.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="action_j3" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="56.0" AnchorPane.bottomAnchor="8.21875" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="Arial Black" size="8.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="name_j3" fill="WHITE" layoutX="38.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="j22" textAlignment="CENTER" wrappingWidth="47.81669235229492" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="35.0">
+                     <font>
+                        <Font name="Arial Black" size="6.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane fx:id="pane_cartas3" layoutX="1.0" layoutY="34.0" prefHeight="76.0" prefWidth="204.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="carta_30" fitHeight="69.0" fitWidth="52.0" layoutX="3.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="3.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="carta_31" fitHeight="69.0" fitWidth="52.0" layoutX="52.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="7.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="carta_32" fitHeight="69.0" fitWidth="52.0" layoutX="101.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="7.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="carta_33" fitHeight="69.0" fitWidth="52.0" layoutX="150.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="6.0">
+                           <image>
+                              <Image url="@../resources/TraseraC.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="pane_j3_condicional" prefHeight="22.0" prefWidth="121.0" visible="false" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="bocadillo_j3_condicional" fitHeight="22.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../resources/bocadillo2.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="info_j3_condicional" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="121.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font name="Arial Black" size="8.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fx:id="mano_j3" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0">
+                     <image>
+                        <Image url="@../resources/mano.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_j3" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="38.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="marcador" prefHeight="320.0" prefWidth="320.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="90.0">
+         <children>
+            <Text fx:id="ronda" fill="#ff722a" layoutX="5.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ronda" wrappingWidth="100.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Text>
+            <AnchorPane fx:id="vacas_eq1" prefHeight="70.0" prefWidth="60.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0">
+               <children>
+                  <AnchorPane fx:id="eq1_vaca1" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: 'ffffff';" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="8.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Heavy" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq1_vaca2" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: 'ffffff';" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="8.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Heavy" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq1_vaca3" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: 'ffffff';" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="8.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Heavy" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq1_vaca4" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: 'ffffff';" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="8.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Heavy" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="eq1_nombre" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="equipo1" textAlignment="CENTER" wrappingWidth="60.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="HelveticaNeueCyr-Bold" size="6.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="vacas_eq2" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="60.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <children>
+                  <AnchorPane fx:id="eq2_vaca1" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: 'ffffff';" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="8.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Heavy" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq2_vaca2" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: 'ffffff';" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="8.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Heavy" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq2_vaca3" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: 'ffffff';" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="8.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Heavy" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq2_vaca4" prefHeight="30.0" prefWidth="30.0" style="-fx-border-color: 'ffffff';" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="8.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Heavy" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="eq2_nombre" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="equipo2" textAlignment="CENTER" wrappingWidth="60.0" AnchorPane.bottomAnchor="0.0">
+                     <font>
+                        <Font name="HelveticaNeueCyr-Bold" size="6.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <HBox fx:id="eq1_piedrasDe5" alignment="CENTER" prefHeight="20.0" prefWidth="200.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="55.0">
+               <children>
+                  <AnchorPane fx:id="eq1_puntos5" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq1_puntos5_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq1_puntos5_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq1_puntos10" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq1_puntos10_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq1_puntos10_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="10" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="5.5" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq1_puntos15" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq1_puntos15_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq1_puntos15_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="15" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="5.5" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq1_puntos20" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq1_puntos20_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq1_puntos20_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="20" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="5.5" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq1_puntos25" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq1_puntos25_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq1_puntos25_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="25" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="5.5" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq1_puntos30" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq1_puntos30_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq1_puntos30_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="30" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="5.5" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq1_puntos35" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq1_puntos35_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq1_puntos35_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="35" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="5.5" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq1_puntos40" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq1_puntos40_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq1_puntos40_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="40" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="5.5" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox fx:id="eq1_piedrasDe1" alignment="CENTER" prefHeight="20.0" prefWidth="125.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="97.0" AnchorPane.topAnchor="25.0">
+               <children>
+                  <AnchorPane fx:id="eq1_puntos1" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq1_puntos1_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq1_puntos1_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq1_puntos2" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq1_puntos2_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq1_puntos2_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq1_puntos3" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq1_puntos3_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq1_puntos3_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq1_puntos4" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq1_puntos4_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq1_puntos4_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="4" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq1_puntosDe1_5" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq1_puntosDe1_5_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq1_puntosDe1_5_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <VBox fx:id="eq2_piedrasDe5" AnchorPane.bottomAnchor="75.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="85.0">
+               <children>
+                  <AnchorPane fx:id="eq2_puntos5" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq2_puntos5_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq2_puntos5_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq2_puntos10" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq2_puntos10_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq2_puntos10_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="10" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="5.5" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq2_puntos15" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq2_puntos15_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq2_puntos15_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="15" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="5.5" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq2_puntos20" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq2_puntos20_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq2_puntos20_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="20" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="5.5" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq2_puntos25" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq2_puntos25_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq2_puntos25_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="25" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="5.5" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq2_puntos30" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq2_puntos30_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq2_puntos30_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="30" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="5.5" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq2_puntos35" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq2_puntos35_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq2_puntos35_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="35" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="5.5" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq2_puntos40" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq2_puntos40_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq2_puntos40_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="40" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="5.5" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox fx:id="eq2_piedrasDe1" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="110.0">
+               <children>
+                  <AnchorPane fx:id="eq2_puntos1" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq2_puntos1_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq2_puntos1_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq2_puntos2" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq2_puntos2_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq2_puntos2_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq2_puntos3" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq2_puntos3_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq2_puntos3_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq2_puntos4" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq2_puntos4_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq2_puntos4_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="4" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eq2_puntosDe1_5" prefHeight="20.0" prefWidth="24.0">
+                     <children>
+                        <Circle fx:id="eq2_puntosDe1_5_circle" fill="TRANSPARENT" radius="8.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="4.5" AnchorPane.topAnchor="2.0" />
+                        <Text fx:id="eq2_puntosDe1_5_txt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER" AnchorPane.bottomAnchor="3.5" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.5">
+                           <font>
+                              <Font name="HelveticaNeueCyr-Bold" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane_comandos" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: rgba(173, 216, 230, 0.7);" visible="false" AnchorPane.bottomAnchor="205.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="201.0" AnchorPane.topAnchor="205.0">
+         <children>
+            <Text fx:id="msg_comando" fill="WHITE" layoutY="-13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mensaje del comando" textAlignment="CENTER" wrappingWidth="90.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Arial Black" size="4.0" />
+               </font>
+            </Text>
+            <VBox fx:id="vbox_comandos" alignment="CENTER" prefHeight="80.0" prefWidth="90.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="panel_ganador" prefHeight="145.0" prefWidth="145.0" style="-fx-background-color: &quot;005b30&quot;; -fx-border-color: &quot;ffffff&quot;; -fx-border-width: 3px;" visible="false" AnchorPane.bottomAnchor="177.0" AnchorPane.leftAnchor="177.0" AnchorPane.rightAnchor="177.0" AnchorPane.topAnchor="177.0">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="76.0" layoutX="43.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icon_no_bkg.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="ganador_text" alignment="CENTER" layoutX="13.0" layoutY="68.0" prefHeight="40.0" prefWidth="121.0" text="Label" textAlignment="CENTER" textFill="#ff722a">
+               <font>
+                  <Font name="Aero" size="6.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+/AddCartaManoException.class
+/CreacionCartaException.class
+/GameObjectException.class
+/JugadorException.class
+/ManoException.class
+/ManoVaciaException.class
+/NoExisteNumeroException.class
+/NoExistePaloException.class
+/NoTienesCartaException.class
+/RecibirCartaException.class
+/RemoveCartaManoException.class
+/TirarCartaException.class

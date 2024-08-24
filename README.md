@@ -1,4 +1,4 @@
-# PROYECTO GPS "MUS, ElArmaSecreta"
+# EL MUS
 
 ## DESCRIPCIÓN DEL PROYECTO
   
@@ -138,13 +138,3 @@
 - **`module-info.java`**: Contiene los requisitos que ha de tener el proyecto para funcionar.
   
 - **`README.md`**: Este archivo que proporciona una visión general del proyecto, su propósito y la estructura del repositorio.
-
-## COLABORADORES
-
-- [Héctor García Rincón](https://github.com/hectorgarciaa)
-- [Diego Alonso Arceiz](https://github.com/diegal04)
-- [Carlos Mantilla Mateos](https://github.com/c123qw)
-- [Mario López Díaz](https://github.com/ARTEMVARTANOV)
-- [Nacho Gutiérrez Sánchez](https://github.com/nacho2606)
-
-  
